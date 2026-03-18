@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About — Arnav Ranjan</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Backend-focused full stack developer specializing in Django, scalable backend systems, APIs, infrastructure, and modern web applications.">
+
+<meta name="author" content="Arnav Ranjan">
+
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arnav Ranjan — About">
+<meta property="og:description" content="Backend-focused full stack developer specializing in scalable backend systems, APIs, and modern web apps.">
+<meta property="og:image" content="/assets/favicon.svg">
+
+
+<!-- TWITTER / X -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Arnav Ranjan — About">
+<meta name="twitter:description" content="Backend developer specializing in Django, scalable backend systems, and infrastructure.">
+<meta name="twitter:image" content="/assets/favicon.svg">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+
+          colors: {
+
+            dark: '#0c1a0c',
+            darker: '#081208',
+
+            primary: '#22c55e',
+            'primary-light': '#4ade80',
+            'primary-dark': '#16a34a',
+
+            accent: '#2dd4bf',
+
+            secondary: '#166534',
+
+            card: '#0f1f0f',
+
+            border: '#1f3a1f'
+          }
+
+        }
+      }
+    }
+  </script>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/components.css">
+
+</head>
+
+
+<body class="bg-darker text-white font-[Inter]">
+
+<!-- Navbar -->
+<div id="navbar-container"></div>
+
+
+<!-- ============================= -->
+<!-- HERO -->
+<!-- ============================= -->
+
+<section class="pt-32 pb-24 relative overflow-hidden">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <div class="section-pill mb-6 inline-flex">
+      <span class="pill-dot"></span>
+      About Me
+    </div>
+
+    <h1 class="text-5xl md:text-6xl font-black mb-6 about-hero-title">
+
+      Backend Developer<br>
+
+      <span class="text-primary">
+        Focused on Performance & Scale
+      </span>
+
+    </h1>
+
+    <p class="text-gray-400 text-lg max-w-2xl mx-auto about-hero-desc">
+
+      I'm a backend-focused full stack developer specializing in Django,
+      infrastructure, and scalable systems. I build reliable web platforms,
+      production-ready applications, and backend architecture designed to last.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- STORY -->
+<!-- ============================= -->
+
+<section class="py-24">
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+    <!-- LEFT -->
+
+    <div class="about-text">
+
+      <h2 class="text-3xl font-bold mb-6">
+
+        My Journey
+
+      </h2>
+
+      <p class="text-gray-400 mb-4">
+
+        I started building web projects by focusing on backend systems —
+        authentication, databases, and architecture. While many developers
+        focus first on visuals, I focused on how systems work underneath.
+
+      </p>
+
+      <p class="text-gray-400 mb-4">
+
+        Over time, I built full platforms including education systems,
+        dashboards, and production-ready applications used in real environments.
+
+      </p>
+
+      <p class="text-gray-400">
+
+        Today, I specialize in building scalable backend systems using Django,
+        secure authentication, infrastructure deployment, and clean architecture.
+
+      </p>
+
+    </div>
+
+
+    <!-- RIGHT -->
+    <div class="about-card">
+
+      <div class="grid grid-cols-2 gap-6">
+
+        <div>
+          <div class="text-3xl font-black text-primary">25+</div>
+          <div class="text-gray-400 text-sm">Projects Built</div>
+        </div>
+
+        <div>
+          <div class="text-3xl font-black text-primary">3+</div>
+          <div class="text-gray-400 text-sm">Years Experience</div>
+        </div>
+
+        <div>
+          <div class="text-3xl font-black text-primary">12+</div>
+          <div class="text-gray-400 text-sm">Clients</div>
+        </div>
+
+        <div>
+          <div class="text-3xl font-black text-primary">18+</div>
+          <div class="text-gray-400 text-sm">Technologies</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- SPECIALIZATION -->
+<!-- ============================= -->
+
+<section class="py-24 bg-card">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+
+      <div class="section-pill inline-flex mb-4">
+        <span class="pill-dot"></span>
+        Expertise
+      </div>
+
+      <h2 class="text-4xl font-black mb-4">
+
+        What I Specialize In
+
+      </h2>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="about-feature-card">
+
+        <i class="fa-solid fa-server text-primary text-2xl mb-4"></i>
+
+        <h3 class="font-semibold mb-2">
+          Backend Systems
+        </h3>
+
+        <p class="text-gray-400 text-sm">
+          Scalable backend architecture, authentication, APIs, and database design.
+        </p>
+
+      </div>
+
+
+      <div class="about-feature-card">
+
+        <i class="fa-solid fa-database text-primary text-2xl mb-4"></i>
+
+        <h3 class="font-semibold mb-2">
+          Database Architecture
+        </h3>
+
+        <p class="text-gray-400 text-sm">
+          Efficient schema design, performance optimization, and scalable data systems.
+        </p>
+
+      </div>
+
+
+      <div class="about-feature-card">
+
+        <i class="fa-solid fa-cloud text-primary text-2xl mb-4"></i>
+
+        <h3 class="font-semibold mb-2">
+          Infrastructure & Deployment
+        </h3>
+
+        <p class="text-gray-400 text-sm">
+          Linux servers, Nginx, Cloudflare, Docker, and production deployment.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- TIMELINE -->
+<!-- ============================= -->
+
+<section class="py-24">
+
+  <div class="max-w-4xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-16">
+
+      <div class="section-pill inline-flex mb-4">
+        <span class="pill-dot"></span>
+        Timeline
+      </div>
+
+      <h2 class="text-4xl font-black">
+        Development Timeline
+      </h2>
+
+      <p class="section-desc mt-3">
+        My journey from learning fundamentals to building production systems.
+      </p>
+
+    </div>
+
+
+    <!-- Timeline -->
+    <div class="timeline-container">
+
+
+      <!-- 2021 -->
+      <div class="timeline-item">
+
+        <div class="timeline-left">
+          <span class="timeline-year">2021</span>
+        </div>
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <h3 class="timeline-title">
+            Started Programming & Web Development
+          </h3>
+
+          <p class="timeline-desc">
+            Learned HTML, CSS, JavaScript fundamentals and began building basic websites.
+            Focus shifted quickly toward backend logic and system design.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2022 -->
+      <div class="timeline-item">
+
+        <div class="timeline-left">
+          <span class="timeline-year">2022</span>
+        </div>
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <h3 class="timeline-title">
+            Backend Development with Django
+          </h3>
+
+          <p class="timeline-desc">
+            Started building backend systems using Django, authentication systems,
+            databases, and REST APIs.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2023 -->
+      <div class="timeline-item">
+
+        <div class="timeline-left">
+          <span class="timeline-year">2023</span>
+        </div>
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <h3 class="timeline-title">
+            First Production Platforms
+          </h3>
+
+          <p class="timeline-desc">
+            Built full platforms including EduSwap Learn and dashboard systems,
+            used in real environments.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2024 -->
+      <div class="timeline-item">
+
+        <div class="timeline-left">
+          <span class="timeline-year">2024</span>
+        </div>
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <h3 class="timeline-title">
+            Infrastructure & Deployment
+          </h3>
+
+          <p class="timeline-desc">
+            Learned Linux servers, Nginx, Cloudflare, Docker, and production deployment.
+            Started deploying real production systems independently.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2025 -->
+      <div class="timeline-item">
+
+        <div class="timeline-left">
+          <span class="timeline-year">2025</span>
+        </div>
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <h3 class="timeline-title">
+            Advanced Backend & System Architecture
+          </h3>
+
+          <p class="timeline-desc">
+            Built scalable backend architectures, optimized performance,
+            and developed enterprise-grade web applications.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Present -->
+      <div class="timeline-item">
+
+        <div class="timeline-left">
+          <span class="timeline-year text-primary">2026 — Present</span>
+        </div>
+
+        <div class="timeline-dot timeline-dot-active"></div>
+
+        <div class="timeline-content">
+
+          <h3 class="timeline-title">
+            Backend Developer — Production Systems
+          </h3>
+
+          <p class="timeline-desc">
+            Focused on building secure, scalable backend systems, infrastructure,
+            and production-ready applications.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="py-24 text-center">
+
+  <h2 class="text-4xl font-black mb-6">
+
+    Let's Build Something Great
+
+  </h2>
+
+  <p class="text-gray-400 mb-8">
+
+    Open to freelance, client work, and collaborations.
+
+  </p>
+
+  <a href="/contact/" class="px-8 py-3 rounded-lg bg-primary text-black font-semibold hover:bg-primary-light transition">
+
+    Contact Me
+
+  </a>
+
+</section>
+
+
+<!-- Footer -->
+<div id="footer-container"></div>
+
+
+<!-- JS -->
+<script src="/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="/js/about-animations.js"></script>
+</body>
+
+</html>

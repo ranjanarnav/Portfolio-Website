@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Arnav Ranjan — Backend Developer</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta name="description" content="Backend-focused full stack developer specializing in Django, scalable backend systems, APIs, infrastructure, and modern web applications.">
+
+<meta name="author" content="Arnav Ranjan">
+
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arnav Ranjan — Backend Developer">
+<meta property="og:description" content="Backend-focused full stack developer specializing in scalable backend systems, APIs, and modern web apps.">
+<meta property="og:image" content="/assets/favicon.svg">
+
+
+<!-- TWITTER / X -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Arnav Ranjan — Backend Developer">
+<meta name="twitter:description" content="Backend developer specializing in Django, scalable backend systems, and infrastructure.">
+<meta name="twitter:image" content="/assets/favicon.svg">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+
+          colors: {
+
+            dark: '#0c1a0c',
+            darker: '#081208',
+
+            primary: '#22c55e',
+            'primary-light': '#4ade80',
+            'primary-dark': '#16a34a',
+
+            accent: '#2dd4bf',
+
+            secondary: '#166534',
+
+            card: '#0f1f0f',
+
+            border: '#1f3a1f'
+
+          }
+
+        }
+      }
+    }
+  </script>
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+
+
+</head>
+
+
+<body class="bg-darker text-white font-[Inter]">
+<!-- Navbar -->
+
+<div id="navbar-container"></div>
+
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center pt-16">
+<div class="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:80px_80px]"></div>
+
+
+    <div class="container hero-grid">
+
+
+      <!-- LEFT -->
+      <div>
+
+
+        <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full 
+bg-primary/10 border border-primary/30 text-primary text-sm font-medium
+backdrop-blur-md shadow-[0_0_20px_rgba(34,197,94,0.15)]">
+
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+
+          Available for projects
+
+        </div>
+
+
+        <h1 class="hero-title">
+
+          Building Secure,<br>
+
+          <span class="text-primary">
+
+            Scalable Backend Systems
+
+          </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+          Backend-focused full stack developer specializing in Django,
+          infrastructure, deployment, and scalable web applications.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+          <a href="projects" class="btn-primary">
+
+            View Projects
+
+          </a>
+
+
+          <a href="contact" class="btn-secondary">
+
+            Contact Me
+
+          </a>
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- RIGHT TERMINAL -->
+      <div class="terminal-wrapper">
+
+        <div class="terminal-glass">
+
+          <!-- header -->
+          <div class="terminal-header">
+
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+
+            <div class="terminal-title">
+              arnav@dev: ~/portfolio
+            </div>
+
+          </div>
+
+          <!-- body -->
+          <div class="terminal-body">
+
+            <pre id="terminal-text"></pre>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+  <section class="" style="margin-top:-60px;">
+    <div class="max-w-5xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+      <div>
+        <p class="text-3xl font-black text-primary">25+</p>
+        <p class="text-gray-400 text-sm">Projects Completed</p>
+      </div>
+      <div>
+        <p class="text-3xl font-black text-primary">3+</p>
+        <p class="text-gray-400 text-sm">Years Experience</p>
+      </div>
+      <div>
+        <p class="text-3xl font-black text-primary">18+</p>
+        <p class="text-gray-400 text-sm">Technologies</p>
+      </div>
+      <div>
+        <p class="text-3xl font-black text-primary">12+</p>
+        <p class="text-gray-400 text-sm">Clients</p>
+      </div>
+    </div>
+  </section>
+
+<section id="what-i-build" class="py-32 animate-on-scroll">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-20">
+
+      <div class="section-pill">
+
+        <span class="pill-dot"></span>
+
+        Capabilities
+
+      </div>
+
+      <h2 class="section-title">
+
+        What I Build
+
+      </h2>
+
+      <p class="section-desc">
+
+        I design and develop scalable backend systems, full web platforms,
+        and production-ready applications focused on performance and reliability.
+
+      </p>
+
+    </div>
+
+
+    <!-- Cards -->
+    <div class="build-grid">
+
+
+      <!-- Card -->
+      <div class="build-card">
+
+        <div class="build-icon-box">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+
+        <h3 class="build-title">
+          Web Applications
+        </h3>
+
+        <p class="build-desc">
+          Full-stack applications built for performance, scalability,
+          and real-world production environments.
+        </p>
+
+      </div>
+
+
+      <!-- Card -->
+      <div class="build-card">
+
+        <div class="build-icon-box">
+          <i class="fa-solid fa-server"></i>
+        </div>
+
+        <h3 class="build-title">
+          Backend Systems
+        </h3>
+
+        <p class="build-desc">
+          Secure backend infrastructure including authentication,
+          APIs, and scalable architecture.
+        </p>
+
+      </div>
+
+
+      <!-- Card -->
+      <div class="build-card">
+
+        <div class="build-icon-box">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <h3 class="build-title">
+          EdTech Platforms
+        </h3>
+
+        <p class="build-desc">
+          Learning platforms focused on usability,
+          performance, and reliability.
+        </p>
+
+      </div>
+
+
+      <!-- Card -->
+      <div class="build-card">
+
+        <div class="build-icon-box">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+
+        <h3 class="build-title">
+          Admin Dashboards
+        </h3>
+
+        <p class="build-desc">
+          Clean dashboards with role-based access,
+          analytics, and management tools.
+        </p>
+
+      </div>
+
+
+      <!-- Card -->
+      <div class="build-card">
+
+        <div class="build-icon-box">
+          <i class="fa-solid fa-cubes"></i>
+        </div>
+
+        <h3 class="build-title">
+          Modern UI Systems
+        </h3>
+
+        <p class="build-desc">
+          Modern interfaces with focus on usability,
+          clarity, and performance.
+        </p>
+
+      </div>
+
+
+      <!-- Card -->
+      <div class="build-card">
+
+        <div class="build-icon-box">
+          <i class="fa-solid fa-gamepad"></i>
+        </div>
+
+        <h3 class="build-title">
+          Game & Automation Tools
+        </h3>
+
+        <p class="build-desc">
+          Custom tools and automation platforms
+          for gaming and technical workflows.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="skills" class="py-20 animate-on-scroll" style="margin-top:-80px;">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-20">
+
+      <div class="section-pill">
+
+        <span class="pill-dot"></span>
+
+        Technical Expertise
+
+      </div>
+
+      <h2 class="section-title">
+
+        Technical Skills
+
+      </h2>
+
+      <p class="section-desc">
+
+        Core technologies and systems I use to build scalable applications.
+
+      </p>
+
+    </div>
+
+
+    <!-- Grid -->
+    <div class="skills-grid">
+
+
+      <!-- HTML -->
+      <div class="skill-card">
+
+        <div class="skill-icon-box">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+
+        <h4 class="skill-name">HTML5</h4>
+
+        <div class="skill-bar">
+          <div class="skill-progress" style="width:90%"></div>
+        </div>
+
+      </div>
+
+
+      <!-- CSS -->
+      <div class="skill-card">
+
+        <div class="skill-icon-box">
+          <i class="fa-brands fa-css3-alt"></i>
+        </div>
+
+        <h4 class="skill-name">CSS3</h4>
+
+        <div class="skill-bar">
+          <div class="skill-progress" style="width:85%"></div>
+        </div>
+
+      </div>
+
+
+      <!-- JS -->
+      <div class="skill-card">
+
+        <div class="skill-icon-box">
+          <i class="fa-brands fa-js"></i>
+        </div>
+
+        <h4 class="skill-name">JavaScript</h4>
+
+        <div class="skill-bar">
+          <div class="skill-progress" style="width:80%"></div>
+        </div>
+
+      </div>
+
+
+      <!-- Python -->
+      <div class="skill-card">
+
+        <div class="skill-icon-box">
+          <i class="fa-brands fa-python"></i>
+        </div>
+
+        <h4 class="skill-name">Python</h4>
+
+        <div class="skill-bar">
+          <div class="skill-progress" style="width:85%"></div>
+        </div>
+
+      </div>
+
+
+      <!-- Django -->
+      <div class="skill-card">
+
+        <div class="skill-icon-box">
+          <i class="fa-solid fa-server"></i>
+        </div>
+
+        <h4 class="skill-name">Django</h4>
+
+        <div class="skill-bar">
+          <div class="skill-progress" style="width:80%"></div>
+        </div>
+
+      </div>
+
+
+      <!-- Backend -->
+      <div class="skill-card">
+
+        <div class="skill-icon-box">
+          <i class="fa-solid fa-code"></i>
+        </div>
+
+        <h4 class="skill-name">Backend Development</h4>
+
+        <div class="skill-bar">
+          <div class="skill-progress" style="width:90%"></div>
+        </div>
+
+      </div>
+
+
+      <!-- APIs -->
+      <div class="skill-card">
+
+        <div class="skill-icon-box">
+          <i class="fa-solid fa-plug"></i>
+        </div>
+
+        <h4 class="skill-name">REST APIs</h4>
+
+        <div class="skill-bar">
+          <div class="skill-progress" style="width:85%"></div>
+        </div>
+
+      </div>
+
+
+      <!-- DB -->
+      <div class="skill-card">
+
+        <div class="skill-icon-box">
+          <i class="fa-solid fa-database"></i>
+        </div>
+
+        <h4 class="skill-name">Database Design</h4>
+
+        <div class="skill-bar">
+          <div class="skill-progress" style="width:80%"></div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+<section id="stack" class="py-24 animate-on-scroll">
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Header -->
+    <div class="mb-16 flex flex-col items-center">
+
+      <div class="section-pill">
+        <span class="pill-dot"></span>
+        Tech Stack
+      </div>
+
+      <h2 class="section-title">
+        What I Build With
+      </h2>
+
+      <p class="section-desc">
+        A quick overview of the languages, frameworks, and infrastructure tools I use.
+      </p>
+
+    </div>
+
+
+    <!-- Stack Grid -->
+    <div class="stack-grid">
+
+
+      <!-- Languages -->
+      <article class="stack-card">
+
+        <h3 class="stack-title">Languages</h3>
+
+        <div class="stack-icon-row">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+
+          <img class="stack-icon"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/960px-Bash_Logo_Colored.svg.png">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg">
+
+        </div>
+
+      </article>
+
+
+      <!-- Backend -->
+      <article class="stack-card">
+
+        <h3 class="stack-title">Backend & Databases</h3>
+
+        <div class="stack-icon-row">
+
+          <img class="stack-icon"
+          src="https://batisteo.gallerycdn.vsassets.io/extensions/batisteo/vscode-django/1.15.0/1703694028504/Microsoft.VisualStudio.Services.Icons.Default">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg">
+
+        </div>
+
+      </article>
+
+
+      <!-- Cloud -->
+      <article class="stack-card">
+
+        <h3 class="stack-title">Cloud & Infrastructure</h3>
+
+        <div class="stack-icon-row">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+
+        </div>
+
+      </article>
+
+
+      <!-- Tools -->
+      <article class="stack-card">
+
+        <h3 class="stack-title">Tools & Platforms</h3>
+
+        <div class="stack-icon-row">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+
+          <img class="stack-icon"
+          src="https://images.icon-icons.com/3685/PNG/512/github_logo_icon_229278.png">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+
+          <img class="stack-icon"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg">
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+ <section id="projects" class="py-2 bg-soft animate-on-scroll">
+    <div class="max-w-7xl mx-auto px-8">
+       <!-- Header -->
+      <div class="text-center mb-20">
+
+        <div class="section-pill">
+
+          <span class="pill-dot"></span>
+
+          Recent Work
+
+        </div>
+
+        <h2 class="section-title">
+
+          Projects & Case Studies
+
+        </h2>
+
+        <p class="section-desc">
+
+          A selection of projects that showcase my skills in backend development,
+          full stack applications, and scalable web platforms.
+
+        </p>
+
+    </div>
+
+
+
+      <div class="grid lg:grid-cols-2 gap-16">
+
+        <div class="project-card border border-white/10 rounded-3xl overflow-hidden">
+
+          <div class="h-56 bg-black/40 flex items-center justify-center text-gray-500">
+            <img src="https://i.postimg.cc/vTyn5j1m/Screenshot-2025-07-11-230357.png" alt="HMS Project Screenshot"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+          </div>
+
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-3">
+              HMS – Health Monitoring System
+            </h3>
+
+            <p class="text-gray-300 mb-6">
+              A healthcare-focused web platform designed to monitor,
+              manage, and organize patient-related data efficiently.
+            </p>
+
+            <ul class="text-gray-300 space-y-1 mb-6">
+              <li>✔ Snappy, responsive experience for staff</li>
+              <li>✔ Stable, role-based backend architecture</li>
+              <li>✔ Straightforward dashboard for day-to-day use</li>
+            </ul>
+
+            <p class="text-sm text-gray-400 mb-8">
+              Built with Django, HTML, CSS and vanilla JavaScript.
+            </p>
+
+            <div class="flex gap-6 text-sm">
+              <a href="#" class="px-5 py-2 rounded-full border border-white/20 hover:border-accent transition">
+                View Demo
+              </a>
+              <a href="#" class="px-5 py-2 rounded-full bg-primary text-black font-semibold">
+                Contact For Same
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card  border border-white/10 rounded-3xl overflow-hidden">
+
+          <div class="h-56 bg-black/40 flex items-center justify-center text-gray-500">
+            <img src="https://i.postimg.cc/Jh9ZztMZ/Screenshot-2025-07-11-230249.png" alt="HMS Project Screenshot"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+          </div>
+
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-3">
+              EduSwap & Learn
+            </h3>
+
+              <p class="text-gray-300 mb-6">
+                An education platform that combines course content, basic community features,
+                and simple tools for students and teachers.
+              </p>
+
+            <ul class="text-gray-300 space-y-1 mb-6">
+              <li>✔ Focused, distraction-free interface</li>
+              <li>✔ Server-rendered views with clear flows</li>
+              <li>✔ Built around real classroom use cases</li>
+            </ul>
+
+            <p class="text-sm text-gray-400 mb-8">
+              Powered by Django on the backend with a custom HTML/CSS frontend.
+            </p>
+
+            <div class="flex gap-6 text-sm">
+              <a href="https://eduswaplearn.pythonanywhere.com/"
+                class="px-5 py-2 rounded-full border border-white/20 hover:border-accent transition">
+                View Demo
+              </a>
+              <a href="#" class="px-5 py-2 rounded-full bg-primary text-black font-semibold">
+                Contact For Same
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card border border-white/10 rounded-3xl overflow-hidden">
+
+          <!-- Project Image -->
+          <div class="h-56 overflow-hidden bg-black/10">
+            <img src="https://i.postimg.cc/k4K869gZ/Screenshot-2025-07-11-230324.png" alt="RyinCloud Website Screenshot"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+          </div>
+
+          <!-- Content -->
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-3">
+              Hosting Website
+            </h3>
+
+            <p class="text-gray-300 mb-6">
+              Marketing site for Hostings — built to quickly explain the product,
+              show pricing, and make it easy for visitors to get started.
+            </p>
+
+            <!-- Features -->
+            <ul class="text-gray-300 space-y-1 mb-6">
+              <li>✔ Simple, focused landing pages</li>
+              <li>✔ Lightweight full stack build</li>
+              <li>✔ Responsive layout that works on smaller screens</li>
+              <li>✔ Dark theme that matches the brand</li>
+            </ul>
+
+            <!-- Tech -->
+            <p class="text-sm text-gray-400 mb-8">
+              Built with Python, Django, DRF, HTML, CSS, Tailwind CSS and a small amount of JavaScript.
+            </p>
+
+            <!-- Actions -->
+            <div class="flex gap-6 text-sm">
+              <a href="#" target="_blank"
+                class="px-5 py-2 rounded-full border border-white/20 hover:border-accent transition">
+                View Demo
+              </a>
+              <a href="#contact" class="px-5 py-2 rounded-full bg-primary text-black font-semibold">
+                Contact For Same
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="project-card  border border-white/10 rounded-3xl overflow-hidden">
+
+          <div class="h-56 bg-black/40 flex items-center justify-center text-gray-500">
+            <img src="	https://i.postimg.cc/7LvZCzJH/Screenshot-2025-07-11-230451.png" alt="HMS Project Screenshot"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+          </div>
+
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-3">
+              Clone UI Designs
+            </h3>
+
+            <p class="text-gray-300 mb-6">
+              A small library of clone UIs I’ve built to study layouts, spacing,
+              animation and how other products solve common design problems.
+            </p>
+
+            <ul class="text-gray-300 space-y-1 mb-6">
+              <li>✔ Close attention to spacing and rhythm</li>
+              <li>✔ Reusable patterns and components</li>
+              <li>✔ CSS written with performance in mind</li>
+            </ul>
+
+            <p class="text-sm text-gray-400 mb-8">
+              Mostly built with plain HTML/CSS, plus a bit of JavaScript where it makes sense.
+            </p>
+
+            <div class="flex gap-6 text-sm">
+              <a href="#" class="px-5 py-2 rounded-full border border-white/20 hover:border-accent transition">
+                View Demo
+              </a>
+              <a href="#" class="px-5 py-2 rounded-full bg-primary text-black font-semibold">
+                Contact For Same
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card  border border-white/10 rounded-3xl overflow-hidden">
+
+          <div class="h-56 bg-black/40 flex items-center justify-center text-gray-500">
+            <img src="	https://i.postimg.cc/2yxZGwv7/Screenshot-2025-07-11-230304.png" alt="HMS Project Screenshot"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+          </div>
+
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-3">
+              Minecraft Store
+            </h3>
+
+            <p class="text-gray-300 mb-6">
+              A small store for Minecraft-related services and digital products,
+              focused on being fast to load and easy to navigate.
+            </p>
+
+            <ul class="text-gray-300 space-y-1 mb-6">
+              <li>✔ Lightweight pages with quick load times</li>
+              <li>✔ Straightforward checkout flow</li>
+              <li>✔ UI that leans into the Minecraft theme</li>
+            </ul>
+
+            <p class="text-sm text-gray-400 mb-8">
+              Built with HTML, CSS and JavaScript.
+            </p>
+
+            <div class="flex gap-6 text-sm">
+              <a href="http://www.ryinpvp.xyz/"
+                class="px-5 py-2 rounded-full border border-white/20 hover:border-accent transition">
+                View Demo
+              </a>
+              <a href="#" class="px-5 py-2 rounded-full bg-primary text-black font-semibold">
+                Contact For Same
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card rounded-3xl overflow-hidden flex flex-col justify-between">
+
+          <!-- Visual -->
+          <div class="h-56 flex items-center justify-center bg-black/10 text-center px-8">
+            <h3 class="text-3xl font-black leading-tight">
+              Many More Projects<br>
+              <span class="text-accent">Beyond This Portfolio</span>
+            </h3>
+          </div>
+
+          <!-- Content -->
+          <div class="p-8">
+            <p class="text-gray-300 mb-6">
+              I’ve worked on many private, client-based, and internal projects
+              that aren’t publicly listed here.
+              <br><br>
+              If you’re interested in collaborating or want to see
+              more relevant work, let’s talk.
+            </p>
+
+            <!-- Actions -->
+            <div class="flex gap-6 text-sm">
+              <a href="#contact" class="px-6 py-2 rounded-full bg-primary text-black font-semibold">
+                Work With Me
+              </a>
+              <a href="#contact" class="px-6 py-2 rounded-full border border-white/20 hover:border-accent transition">
+                Request More Projects
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="py-32 animate-on-scroll">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="mb-16 text-center">
+        <h2 class="text-3xl font-semibold text-white">Awards & Achievements</h2>
+        <p class="text-gray-400 mt-3">
+          A few highlights from school, early projects, and competitions I’ve taken part in.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="award-card">
+          <i class="fa-solid fa-landmark award-icon"></i>
+          <h3>Inspire MANAK Award</h3>
+          <p>
+            Recognised under the INSPIRE–MANAK scheme by the Government of India
+            for a project that used simple tech to solve a real problem.
+          </p>
+          <span>2025</span>
+        </div>
+
+
+        <div class="award-card">
+          <i class="fa-solid fa-trophy award-icon"></i>
+          <h3>Young Innovator Award</h3>
+          <p>
+            Awarded for a series of school projects that combined software, hardware,
+            and a bit of experimentation.
+          </p>
+          <span>2024</span>
+        </div>
+
+        <div class="award-card">
+          <i class="fa-solid fa-medal award-icon"></i>
+          <h3>EduSwap Demo Recognition</h3>
+          <p>
+            Recognition for building and demoing EduSwap Learn end‑to‑end,
+            from first prototype to working deployment.
+          </p>
+          <span>2023</span>
+        </div>
+
+        <div class="award-card">
+          <i class="fa-solid fa-award award-icon"></i>
+          <h3>Startup & Idea Pitch Winner</h3>
+          <p>
+            Winner at a local pitch event for presenting a simple, clear product idea
+            backed by a working demo.
+          </p>
+          <span>2023</span>
+        </div>
+
+        <div class="award-card">
+          <i class="fa-solid fa-star award-icon"></i>
+          <h3>Technical Excellence</h3>
+          <p>
+            Acknowledged for clean backend architecture, database structure,
+            and attention to detail.
+          </p>
+          <span>2022</span>
+        </div>
+        <div class="award-card cta-award">
+          <i class="fa-solid fa-rocket award-icon"></i>
+          <h3>Explore More Projects</h3>
+          <p>
+            Interested in seeing more of my work or building something together?
+            I’m available for collaborations, freelance work, and full-stack projects.
+          </p>
+
+          <div class="mt-6 flex gap-4">
+            <a href="#projects" class="cta-btn-outline">
+              View Projects
+            </a>
+            <a href="#contact" class="cta-btn-solid">
+              Hire Me
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+   <section class="py-32 text-center animate-on-scroll">
+    <h2 class="text-4xl font-black mb-6">Let’s Work Together</h2>
+    <p class="text-gray-300 mb-10 max-w-xl mx-auto">
+      I’m open to freelance work, collaborations, and long‑term projects where I can
+      take responsibility for both the backend and the interface.
+    </p>
+
+    <div class="flex justify-center gap-8">
+      <a href="#contact" class="px-8 py-3 rounded-full bg-primary text-black font-semibold">
+        Hire Me
+      </a>
+      <a href="#projects" class="px-8 py-3 rounded-full border border-white/20 hover:border-accent transition">
+        View Portfolio
+      </a>
+    </div>
+  </section>
+
+<button id="backToTop" class="back-to-top">
+
+  <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<div id="footer-container"></div>
+  <!-- JS -->
+  <script src="js/terminal.js"></script>
+<script src="js/devtools-blocker.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+<script src="js/background.js"></script>
+<script src="js/cursor.js"></script>
+</body>
+
+</html>
